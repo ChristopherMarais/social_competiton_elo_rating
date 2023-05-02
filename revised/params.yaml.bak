@@ -1,0 +1,64 @@
+
+# full path to the excel file that will be taken as input to this notebook
+# if only a name of the file is given it will look ofr hte file in the same directory as this script/notebook
+raw_data_file_path : C:\Users\gcmar\Desktop\GIT_REPOS\social_competiton_elo_rating\jupyter_notebooks\data\pilot_3_tube_test.xlsx
+
+# names of sheets to process
+# if this list is empty all the sheets will be processed
+inputted_sheet_names_list :
+    - 'CAGE1'
+    - 'CAGE2'
+    - 'CAGE3'
+    - 'CAGE4'
+
+# name of column to use in all sheets whereupon sessions are divided
+# date is the default
+session_divider_column : date
+
+# define the row in which the headers are found
+# The default is 0
+# amke sure that all sheets designated for processing are in this ditionary
+header_row_dict :
+    'CAGE1': 0
+    'CAGE4': 0
+
+# define here which individuals have different original cages than the sheets they are found in
+# the individual IDs and cage names should be the same as the format followed in the input exel file
+id_to_cage :
+    '4.2': 'CAGE2'
+    '1.1': 'CAGE3'
+
+
+# define the strains of each individual
+# individual IDs should follow the same format as what was in the input excel file
+cage_to_strain :
+    '1.1': 'C57'
+    '1.2': 'C57'
+    '1.3': 'C57'
+    '1.4': 'C57'
+    '2.1': 'C57'
+    '2.2': 'C57'
+    '2.3': 'C57'
+    '2.4': 'C57'
+    '3.1': 'C57'
+    '3.2': 'C57'
+    '3.3': 'C57'
+    '3.4': 'C57'
+    '4.1': 'CD1'
+    '4.2': 'CD1'
+    '4.3': 'CD1'
+    '4.4': 'CD1'
+    '5.1': 'CD1'
+    '5.2': 'CD1'
+    '5.3': 'CD1'
+    '5.4': 'CD1'
+    '6.1': 'CD1'
+    '6.2': 'CD1'
+    '6.3': 'CD1'
+    '6.4': 'CD1'
+
+# Define names of the files and subfolers in the output folder 
+# subfolder_name : tube_test_elo_scores_pilot_3 # this defines the subfolder in the output folder where he results will be saved
+# all_sheet_scores_name : elo_score_history # name of the csv that contains all the processed information about all the input sheets
+# final_elo_score_name : final_elo_score # name of the csv file of the final ELO score of each individual
+# aggregate_all_pairwise_name : all_pairwise_results_aggregate # name of the csv that aggregates all pairwise interactions that were performed
