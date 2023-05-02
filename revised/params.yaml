@@ -62,3 +62,6 @@ subfolder_name : tube_test_elo_scores_pilot_3 # this defines the subfolder in th
 all_sheet_scores_name : elo_score_history # name of the csv that contains all the processed information about all the input sheets
 final_elo_score_name : final_elo_score # name of the csv file of the final ELO score of each individual
 aggregate_all_pairwise_name : all_pairwise_results_aggregate # name of the csv that aggregates all pairwise interactions that were performed
+
+# define whether plots should be printed or not
+save_plots : True
